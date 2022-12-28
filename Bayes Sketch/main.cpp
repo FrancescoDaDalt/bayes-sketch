@@ -48,14 +48,14 @@ int main(int argc, const char * argv[]) {
 	auto seed = rd();
 	srand(time(NULL));
 	
-	// Read in trace froma csv file with the following columns : (timestamp, key, payload).
+	// Read in trace from a csv file with the following columns : (timestamp, key, payload).
 	// The timestamp is ignored and the data stream is assumed to be in the right ordering.
 	// This constructor subsamles randomly 10000 keys from the stream. The random seed is given by seed.
 //	Trace_Container trace("Data/448000-1.csv", 10000, seed);
 //	Trace_Container train_trace("Data/448000-1.csv", 10000, seed + 42);
 	
 	// This constructor subsamples the data stream by extracting the segment specified by the tuple.
-	// In this example, the trainign trace takes the first 10% and the test trace the last 10% of teh datastream.
+	// In this example, the training trace takes the first 10% and the test trace the last 10% of the datastream.
 	// num_bloom_filter_cells specifies how many bloom filter cells to use for cardinality estimation. Whether the filter is used or not can be specified later.
 	int num_bloom_filter_cells = 100000;
 	Trace_Container trace("Data/univ/univ1_5.csv", tuple<float, float>(0.9, 1.0), num_bloom_filter_cells);
@@ -118,7 +118,7 @@ int main(int argc, const char * argv[]) {
 			PR_Sketch pr_sketch;
 			
 			// Define all prior chi parameters to try out during training
-			// This is just one of uncountable ways how optimal priors may be found. Finding the optimal prior by menas of bayesian optimization is likely faster but a bit of an overkill.
+			// This is just one of uncountable ways how optimal priors may be found. Finding the optimal prior by means of bayesian optimization is likely faster but a bit of an overkill.
 			// As described in the paper, we use a log-scaled grid to find the best chi. The search range comes from an educated guess of where the optimal chi should lie based on the
 			// definition of chi.
 			double basechi = 1.0 / ((singlehash_train_ds.get_l1() * (double) singlehash_train_ds.get_l1()) / train_trace.get_distinct_ids().size());
