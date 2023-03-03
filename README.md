@@ -1,7 +1,7 @@
 # Bayesian Sketches 
 
 This project provides a codebase with which the Count-[1], CountMin-[2], CB-, CCA-, CCB-, Seq-[3], and PR-Sketches[4] can be compared to each other in a simulation environment.
-The CB-, CCA-, and CCB-Sketches are the algorithms proposed by the paper associated to this project.
+The CB-, CCA-, and CCB-Sketches are the algorithms proposed by the paper[9] associated to this project.
 
 ## What is inside
 
@@ -82,4 +82,5 @@ Francesco Da Dalt is the main author of this project. Of course the MurmurHash3 
 [6] Conrad Sanderson and Ryan Curtin. (2016). Armadillo: a template-based C++ library for linear algebra
 [7] René Gebel. (2012). KL1p: A portable C++ library for Compressed Sensing
 [8] Austin Appleby. (2016). https://github.com/aappleby/smhasher/blob/master/src/MurmurHash3.cpp
+[9] Francesco Da Dalt, Simon Scherrer, Adrian Perrig. (2022). Bayesian Sketches for Volume Estimation in Data Streams. https://doi.org/10.14778/3574245.3574252
 
