@@ -75,12 +75,20 @@ Francesco Da Dalt is the main author of this project. Of course the MurmurHash3 
 # References
 
 [1] Charikar, M., Chen, K., Farach-Colton, M. (2002). Finding Frequent Items in Data Streams
+
 [2] Graham Cormode and S. Muthukrishnan. (2005). An improved data stream summary: the count-min sketch and its applications
+
 [3] Huang, Q., Sheng, S., Chen, X., Bao, Y., Zhang, R., Xu, Y., and Zhang, G. (2021). Toward Nearly-Zero-Error Sketching via Compressive Sensing
+
 [4] Siyuan Sheng, Qun Huang, Sa Wang, and Yungang Bao. (2021). PR-sketch: monitoring per-key aggregation of streaming data with nearly full accuracy
+
 [5] Conrad Sanderson and Ryan Curtin. (2018). A User-Friendly Hybrid Sparse Matrix Class in C++
+
 [6] Conrad Sanderson and Ryan Curtin. (2016). Armadillo: a template-based C++ library for linear algebra
+
 [7] René Gebel. (2012). KL1p: A portable C++ library for Compressed Sensing
+
 [8] Austin Appleby. (2016). https://github.com/aappleby/smhasher/blob/master/src/MurmurHash3.cpp
+
 [9] Francesco Da Dalt, Simon Scherrer, Adrian Perrig. (2022). Bayesian Sketches for Volume Estimation in Data Streams. https://doi.org/10.14778/3574245.3574252
 
